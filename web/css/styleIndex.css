@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: #095161;
+}
+
+nav{
+    overflow: hidden;
+    height: 100px;
+    width: auto;
+    background-color: #053742;
+    font-family: sans-serif;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+}
+
+.buttons{
+  float: right;
+  margin-top: 1.5%;
+  margin-right: 5%;
+}
+
+.btn{
+    padding: 10px 10px;
+    margin-left: 2vw;
+    font-size:1rem;
+    cursor:pointer;
+    background-color: transparent;
+    border:1.5px solid #f2f5f7;
+    border-radius: 2em;
+    color: white;
+}
+
+.btn:hover{
+    color:#fff;
+    background-color: #dd5f24;
+    border:1.5px solid #dd5f24;
+    transition: all ease-in-out 350ms;
+}
+
+.genrePick{
+    margin-top: 20px;
+}
+
+#test{
+    background-color: blue;
+    padding: 10px 10px;
+    margin-left: 2vw;
+    font-size:1rem;
+    cursor:pointer;
+    border:1.5px solid #f2f5f7;
+    border-radius: 2em;
+    color: white;
+}

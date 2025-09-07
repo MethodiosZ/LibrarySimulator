@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin Panel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styleAdminPagel.css">
+        <script src="js/ajax.js" defer></script>
+        <script src="js/adminScript.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Admin Panel</div>
+            <div id="UserTable">
+                <button onclick="adminGET('users')">Load Users Table</button>
+            </div>  
+            <div id="chart1" class="chart">
+                <button onclick="adminGET('chart1')">Show books per Library</button>
+            </div>
+            <div id="chart2" class="chart">
+                <button onclick="adminGET('chart2')">Show books per Genre</button>
+            </div>
+            <div id="chart3" class="chart">
+                <button onclick="adminGET('chart3')">Show students per Degree</button>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="LibrarySimulator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gson-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mysql-connector-java-8.0.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
