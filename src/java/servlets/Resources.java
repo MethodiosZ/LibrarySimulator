@@ -11,7 +11,7 @@ import mainClasses.Person;
 
 /**
  *
- * @author Methodios
+ * @author MethodiosZach
  */
 public class Resources {
 

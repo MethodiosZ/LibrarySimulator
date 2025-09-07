@@ -20,7 +20,7 @@ import mainClasses.Librarians;
 
 /**
  *
- * @author Methodios
+ * @author MethodiosZach
  */
 public class Librarian extends HttpServlet {
 
@@ -28,8 +28,8 @@ public class Librarian extends HttpServlet {
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
      *
-     * @param request servlet request
-     * @param response servlet response
+     * @param req servlet request
+     * @param res servlet response
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
@@ -83,9 +83,7 @@ public class Librarian extends HttpServlet {
             throws ServletException, IOException {
         try {
             handleRequest(request, response);
-        } catch (SQLException ex) {
-            Logger.getLogger(Librarian.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
+        } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(Librarian.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -103,9 +101,7 @@ public class Librarian extends HttpServlet {
             throws ServletException, IOException {
         try {
             handleRequest(request, response);
-        } catch (SQLException ex) {
-            Logger.getLogger(Librarian.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
+        } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(Librarian.class.getName()).log(Level.SEVERE, null, ex);
         }
     }

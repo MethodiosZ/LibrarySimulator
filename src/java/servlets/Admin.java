@@ -19,7 +19,7 @@ import mainClasses.Student;
 
 /**
  *
- * @author Methodios
+ * @author MethodiosZach
  */
 public class Admin extends HttpServlet {
 
@@ -27,9 +27,7 @@ public class Admin extends HttpServlet {
     public void init() {
         try {
             Resources.setResources();
-        } catch (SQLException ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
+        } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -52,9 +50,7 @@ public class Admin extends HttpServlet {
             } else {
                 res.setStatus(400);
             }
-        } catch (SQLException ex) {
-            Logger.getLogger(Admin.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
+        } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(Admin.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -98,29 +94,30 @@ public class Admin extends HttpServlet {
 
     private String BooksPerLibrary() throws SQLException, ClassNotFoundException {
         EditBooksInLibraryTable book = new EditBooksInLibraryTable();
-        String data, out = "Quantity,Books per Library+";
+        String data;
+        StringBuilder out = new StringBuilder("Quantity,Books per Library+");
         int count;
         for (int i = 1; i < 6; i++) {
             data = book.BooksInLibrary(i);
             count = data.length() - data.replace("{", "").length();
             switch(i){
                 case 1:
-                    out += "Vikelaia," + count + "+";
+                    out.append("Vikelaia,").append(count).append("+");
                     break;
                 case 2:
-                    out += "Vivliothiki Panepistimiou Kritis Iraklio," + count + "+";
+                    out.append("Vivliothiki Panepistimiou Kritis Iraklio,").append(count).append("+");
                     break;
                 case 3:
-                    out += "Vivliothiki Panepistimiou Kritis Rethymno," + count + "+";
+                    out.append("Vivliothiki Panepistimiou Kritis Rethymno,").append(count).append("+");
                     break;
                 case 4:
-                    out += "Vivliothiki Mesogeiako Panepistimio Iraklio," + count + "+";
+                    out.append("Vivliothiki Mesogeiako Panepistimio Iraklio,").append(count).append("+");
                     break;
                 case 5:
-                    out += "Vivliothiki Politexneiou Chania," + count;
+                    out.append("Vivliothiki Politexneiou Chania,").append(count);
             }
         }
-        return out;
+        return out.toString();
     }
 
     private String BooksPerGenre() throws SQLException, ClassNotFoundException {

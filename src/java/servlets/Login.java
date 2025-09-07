@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Methodios
+ * @author MethodiosZach
  */
 public class Login extends HttpServlet {
 
@@ -20,9 +20,7 @@ public class Login extends HttpServlet {
     public void init() {
         try {
             Resources.setResources();
-        } catch (SQLException ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
+        } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         }
     }

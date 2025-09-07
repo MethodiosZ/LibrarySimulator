@@ -14,7 +14,7 @@ import mainClasses.User;
 
 /**
  *
- * @author Methodios
+ * @author MethodiosZach
  */
 public class Register extends HttpServlet {
 
@@ -58,7 +58,7 @@ public class Register extends HttpServlet {
 
     private int findType(String data) {
         int start = data.indexOf("usertype") + 11;
-        if (data.substring(start, start + 7).equals("Student")) {
+        if (data.startsWith("Student", start)) {
             return 1;
         }
         return 2;

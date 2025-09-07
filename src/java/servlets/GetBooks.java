@@ -21,7 +21,7 @@ import java.util.logging.Logger;
 import mainClasses.Book;
 /**
  *
- * @author Methodios
+ * @author MethodiosZach
  */
 public class GetBooks extends HttpServlet {
 
@@ -59,9 +59,7 @@ public class GetBooks extends HttpServlet {
                 out.println(json);
                 response.setStatus(200);
             }
-        } catch (SQLException ex) {
-            Logger.getLogger(GetBooks.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
+        } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(GetBooks.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
