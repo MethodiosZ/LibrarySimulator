@@ -8,7 +8,7 @@ package mainClasses;
 
 /**
  *
- * @author Mike
+ * @author MethodiosZach
  */
 public class BookInLibrary {
     String isbn;

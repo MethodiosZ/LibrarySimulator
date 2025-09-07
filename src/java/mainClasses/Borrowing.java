@@ -8,7 +8,7 @@ package mainClasses;
 
 /**
  *
- * @author Mike
+ * @author MethodiosZach
  */
 public class Borrowing {
     int borrowing_id,bookcopy_id,user_id;
@@ -61,7 +61,4 @@ public class Borrowing {
         this.status = status;
     }
 
-
-  
-    
 }

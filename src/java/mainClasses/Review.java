@@ -7,7 +7,7 @@ package mainClasses;
 
 /**
  *
- * @author micha
+ * @author MethodiosZach
  */
 public class Review {
 

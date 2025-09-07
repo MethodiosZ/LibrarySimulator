@@ -10,7 +10,7 @@ import mainClasses.User;
 
 /**
  *
- * @author Mike
+ * @author MethodiosZach
  */
 public class Student extends User{
     

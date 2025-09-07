@@ -8,7 +8,7 @@ package mainClasses;
 
 /**
  *
- * @author Mountantonakis
+ * @author MethodiosZach
  */
 public class Book {
     String isbn,title,authors,genre,url,photo;

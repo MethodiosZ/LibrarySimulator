@@ -7,7 +7,7 @@ package mainClasses;
 
 /**
  *
- * @author mountant
+ * @author MethodiosZach
  */
 public class AdminMessage {
     int message_id;

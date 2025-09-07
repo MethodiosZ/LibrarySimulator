@@ -9,7 +9,7 @@ package mainClasses;
 
 /**
  *
- * @author Mike
+ * @author MethodiosZach
  */
 public class User {
     String username,email,password,firstname,lastname,birthdate;
@@ -26,8 +26,7 @@ public class User {
     public void setPersonalpage(String personalpage) {
         this.personalpage = personalpage;
     }
-   
-    
+
     public String getAddress() {
         return address;
     }
@@ -51,9 +50,7 @@ public class User {
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
-    
-    
-    
+
     public String getTelephone() {
         return telephone;
     }
@@ -61,7 +58,6 @@ public class User {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
-    
 
     public String getUsername() {
         return username;
@@ -87,8 +83,6 @@ public class User {
         this.password = password;
     }
 
-   
-    
     public String getBirthdate() {
         return birthdate;
     }
@@ -96,7 +90,6 @@ public class User {
     public void setBirthdate(String birthDate) {
         this.birthdate = birthDate;
     }
-
    
     public String getCountry() {
         return country;
@@ -114,7 +107,6 @@ public class User {
         this.city = city;
     }
 
- 
     public Double getLat() {
         return lat;
     }
@@ -130,8 +122,6 @@ public class User {
     public void setLon(Double lon) {
         this.lon = lon;
     }
-
- 
 
     public String getGender() {
         return gender;

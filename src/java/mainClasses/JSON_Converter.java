@@ -10,7 +10,7 @@ import java.io.IOException;
 
 /**
  *
- * @author micha
+ * @author MethodiosZach
  */
 public class JSON_Converter {
     
@@ -20,8 +20,7 @@ public class JSON_Converter {
 	while ((line = reader.readLine()) != null) {
 		buffer.append(line);
 	}
-	String data = buffer.toString();
-	return data;
+	return buffer.toString();
 }
 
     

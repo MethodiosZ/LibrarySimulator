@@ -2,7 +2,7 @@ package mainClasses;
 
 /**
  *
- * @author Methodios
+ * @author MethodiosZach
  */
 public class Person {
     public Person(String username, String password, String type) {
